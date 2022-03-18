@@ -26,7 +26,10 @@ describe 'A tile' do
     end
 
     it 'stays down despite being flipped more than once' do
-      skip
+      tile = Tile.new(1)
+      tile.flip
+      tile.flip
+      expect(tile.up?).to eq(false)
     end
 
   end
