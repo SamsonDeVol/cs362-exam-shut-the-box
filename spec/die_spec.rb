@@ -34,8 +34,10 @@ describe 'A die' do
   end
 
   describe '#to_s string representation' do
-    it 'TODO' do
-      skip
+    it 'returns the face value as a string' do
+      die = Die.new()
+      result = die.face_value.to_s
+      expect(die.to_s).to eq(result)
     end
   end
 
