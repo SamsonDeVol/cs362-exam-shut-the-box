@@ -19,8 +19,10 @@ describe 'A tile' do
   end
 
   describe '#flip' do
-    it 'is up after being flipped' do
-      skip
+    it 'is not up after being flipped' do
+      tile = Tile.new(1)
+      tile.flip
+      expect(tile.up?).to eq(false)
     end
 
     it 'stays down despite being flipped more than once' do
