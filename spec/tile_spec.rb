@@ -5,7 +5,8 @@ describe 'A tile' do
   describe 'attributes' do
 
     it 'has a value' do
-      skip
+      tile = Tile.new(1)
+      expect(tile).to respond_to(:value)
     end
 
   end
