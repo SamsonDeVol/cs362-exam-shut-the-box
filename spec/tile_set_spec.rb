@@ -4,8 +4,8 @@ describe 'A tile set' do
 
   describe '::generate' do
 
-    it 'returns an array of 9 tiles by default' do
-      raise "Start here"
+    it 'returns an array of 9 tiles by default' do    
+      expect(TileSet.generate.length()).to eq(9)
     end
 
     it 'returns an array of tiles of a specified length' do
