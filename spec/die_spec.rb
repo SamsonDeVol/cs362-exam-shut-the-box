@@ -8,8 +8,9 @@ describe 'A die' do
       expect(die).to respond_to(:number_of_sides)
     end
 
-    it 'TODO' do
-      skip
+    it 'has a face value' do
+      die = Die.new()
+      expect(die).to respond_to(:face_value)
     end
   end
 
