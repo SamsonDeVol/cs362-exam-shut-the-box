@@ -22,13 +22,14 @@ describe 'A die' do
 
     it 'can be created with a custom number of sides' do
       die = Die.new(10)
-      expect(die.number_of_sides).to eq(10)
+      expect(die.number_of_sides).to eq(10r)
     end
   end
 
   describe 'face value' do
     it 'has a face value of 1 by default' do
-      skip
+      die = Die.new()
+      expect(die.face_value).to eq(1)
     end
   end
 
